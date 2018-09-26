@@ -29,6 +29,6 @@ Here is async example:
 		.next(someOtherService::processResults) //let's think this operation will take a lot of time
 		.onDone(/*show smth on UI*/)		
 		
-	someService.findById(1).onDone(/*show smth on UI*/)// will wait while call above is not finished
+	someService.findById(1).onDone(/*show smth on UI*/)// will wait while calls above (findById -> next) is not finished
 
 ```
